@@ -70,7 +70,7 @@ Simple loops
 6. Programming exercise: The next leap year
 7. Programming exercise: Story
 8. Programming exercise: Working with numbers
-9. Quiz: Feedback, part 2
+
 Part 3
 Loops with conditions
 1. Programming exercise: Print numbers
@@ -110,7 +110,7 @@ Defining functions
 5. Programming exercise: A square of hashes
 6. Programming exercise: Chessboard
 7. Programming exercise: A word squared
-8. Quiz: Feedback, part 3
+
 Part 4
 The Visual Studio Code editor, Python interpreter and built-in debugging tool
 1. Programming exercise: Hello Visual Studio Code
@@ -189,7 +189,7 @@ Tuple
 3. Programming exercise: Older people
 4. Programming exercise: Student database
 5. Programming exercise: A square of letters
-6. Quiz: Feedback, Part 5
+
 Part 6
 Reading files
 1. Programming exercise: Largest number
@@ -214,7 +214,7 @@ Handling errors
 2. Programming exercise: Parameter validation
 3. Programming exercise: Incorrect lottery numbers
 Local and global variables
-1. Quiz: Feedback, Part 6
+
 Part 7
 Modules
 1. Programming exercise: Hypotenuse
@@ -241,4 +241,4 @@ Creating your own modules
 2. Quiz: Loppukysely, osa 7
 More Python features
 1. Programming exercise: Your own programming language
-2. Quiz: Course Feedback
+
