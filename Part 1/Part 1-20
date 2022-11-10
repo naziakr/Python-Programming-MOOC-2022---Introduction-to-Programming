@@ -1,0 +1,18 @@
+# Please write a program which asks for the number of students on a course and the desired group size. The program will then print out the number of groups formed from the students on the course. If the division is not even, one of the groups may have fewer members than specified.
+
+
+Sample output
+How many students on the course? 8
+Desired group size? 4
+Number of groups formed: 2
+
+code:
+c = input('How many students on the course')
+d = input('Desired group size?')
+e = int(c)/int(d)
+print(e)
+print(int(e))
+if e+1 > int(e)+1:
+    print('Number of groups formed:', int(e)+1)
+else:
+    print('Number of groups formed:', e)
