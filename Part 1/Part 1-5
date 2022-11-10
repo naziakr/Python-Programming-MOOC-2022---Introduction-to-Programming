@@ -1,0 +1,4 @@
+# Please write a program which prints 'Hello there!'
+
+print("Hello there!")
+
