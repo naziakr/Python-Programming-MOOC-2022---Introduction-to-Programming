@@ -1,0 +1,19 @@
+# Please write a program which asks the user for four numbers. The program then prints out the sum and the mean of the numbers.
+
+The program should function as follows:
+
+Sample output
+Number 1: 2
+Number 2: 1
+Number 3: 6
+Number 4: 7
+The sum of the numbers is 16 and the mean is 4.0
+
+code:
+one = input('Number 1:')
+two = input('Number 2:')
+three = input('Number 3:')
+four = input('Number 4:')
+s = int(one)+int(two)+int(three)+int(four)
+m = float(s/4)
+print('The sum of the numbers is', s, 'and the mean is', m)
