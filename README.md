@@ -18,10 +18,10 @@ Information from the user
 4. Programming exercise: Fix the code: Utterances
 5. Programming exercise: Story
 More about variables
-1. Quiz: Background information
-2. Programming exercise: Extra space
-3. Programming exercise: Arithmetics
-4. Programming exercise: Fix the code: Print a single line
+
+1. Programming exercise: Extra space
+2. Programming exercise: Arithmetics
+3. Programming exercise: Fix the code: Print a single line
 Arithmetic operations
 1. Programming exercise: Times five
 2. Programming exercise: Name and age
