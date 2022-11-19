@@ -1,0 +1,14 @@
+# Please write a program which asks for the names and ages of two persons. The program should then print out the name of the elder.
+
+print('Person 1')
+n = input('Name')
+o = int(input('Age'))
+print('Person 2')
+m = input('Name')
+p = int(input('Age'))
+if o>p:
+    print('The elder is', n)
+elif p>o:
+    print('The elder is', m)
+elif p==o:
+    print(n, 'and', m, 'are the same age')
