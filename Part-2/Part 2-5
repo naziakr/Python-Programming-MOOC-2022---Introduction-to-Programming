@@ -1,0 +1,11 @@
+# Please write a program which asks for two integer numbers. The program should then print out whichever is greater. 
+If the numbers are equal, the program should print a different message.
+
+a = int(input('Please type in the first number:'))
+b = int(input('Please type in another number:'))
+if a>b:
+    print('The greater number was:', a)
+elif a<b:
+    print('The greater number was:', b)
+elif a==b:
+    print('The numbers are equal!')
