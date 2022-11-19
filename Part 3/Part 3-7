@@ -1,0 +1,15 @@
+# Please write a new version of the program in the previous exercise. In addition to the result it should also print out the calculation performed:
+
+Sample output
+Limit: 2
+The consecutive sum: 1 + 2 = 3
+
+limit = int(input("Limit:"))
+num = 1
+value = 1
+x = "1"
+while value < limit:
+    num += 1
+    value += num
+    x += f" + {num}"
+print(f"The consecutive sum: {x} = {value}")
