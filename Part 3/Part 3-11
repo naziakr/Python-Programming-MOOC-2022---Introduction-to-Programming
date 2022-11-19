@@ -1,0 +1,9 @@
+# Please write a program which asks the user for a string. 
+The program then prints out a message based on whether the second character and the second to last character are the same or not.
+
+inp = input('Please type in a string:')
+l = len(inp)
+if inp[1] == inp[l-2]:
+    print('The second and the second to last characters are', inp[1])
+else:
+    print('The second and the second to last characters are different')
