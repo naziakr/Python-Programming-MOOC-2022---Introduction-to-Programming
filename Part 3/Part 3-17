@@ -1,0 +1,17 @@
+# Please write a program which asks the user to type in a string. 
+The program then prints out all the substrings which begin with the first character, from the shortest to the longest. Have a look at the example below.
+
+Sample output
+Please type in a string: test
+t
+te
+tes
+test
+
+
+int = input('Please type in a string:')
+l = len(int)
+i = 0
+while i<l:
+    print(int[:i+1])
+    i = i+1
