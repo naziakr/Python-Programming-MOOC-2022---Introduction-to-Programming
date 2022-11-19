@@ -1,0 +1,12 @@
+# Please write a program which asks the user for a positive integer number. 
+The program then prints out a list of multiplication operations until both operands reach the number given by the user. 
+
+
+n = int(input('Please type in a number'))
+l = 1
+while l<n+1:
+    m = 1
+    while m<n+1:
+        print(f"{l} x {m} = {l*m}")
+        m = m+1
+    l = l+1
