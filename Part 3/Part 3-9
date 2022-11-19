@@ -1,0 +1,14 @@
+# Please write a program which asks the user for two strings and then prints out whichever is the longer of the two - that is, whichever has the more characters.
+If the strings are of equal length, the program should print out "The strings are equally long".
+
+
+s = input('Please type in string 1')
+t = input('Please type in string 2')
+l = len(s)
+m = len(t)
+if l ==m:
+    print('The strings are equally long')
+elif l<m:
+    print(t, "is longer")
+elif l>m:
+    print(s, "is longer")
