@@ -1,0 +1,12 @@
+# Please write a program which asks the user for two words. The program should then print out whichever of the two comes alphabetically last.
+
+You can assume all words will be typed in lowercase entirely.
+
+a = input('Please type in the 1st word:')
+b = input('Please type in the 2nd word:')
+if a<b:
+    print(a, 'comes alphabetically before', b)
+elif b<a:
+    print(b, 'comes alphabetically before', a)
+elif a==b:
+    print('You gave the same word twice')
