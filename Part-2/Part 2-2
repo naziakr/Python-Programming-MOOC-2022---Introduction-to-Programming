@@ -1,0 +1,7 @@
+w = input('Please type in a word:')
+l = len(w)
+if l>1:
+    print("There are", l, "letters in the word", w)
+    print('Thank you!')
+else:
+    print('Thank you!')
