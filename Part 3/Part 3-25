@@ -1,0 +1,17 @@
+# Please write a program which asks the user to type in an integer number. 
+If the user types in a number equal to or below 0, the execution ends. Otherwise the program prints out the factorial of the number.
+
+
+while True:
+    inp = int(input('Please type in a number'))
+    i = 1
+    f = 1
+    if inp<=0:
+        break
+    if inp>0:
+        while i<=inp:
+            f = f*i
+            i = i+1
+        print('The factorial of the number', inp, 'is', f)
+        
+print ('Thanks and bye!')
