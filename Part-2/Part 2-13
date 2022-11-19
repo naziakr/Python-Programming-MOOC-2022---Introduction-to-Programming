@@ -1,0 +1,21 @@
+# Please write a program which asks the user for three letters. 
+The program should then print out whichever of the three letters would be in the middle if the letters were in alphabetical order.
+
+You may assume the letters will be either all uppercase, or all lowercase.
+
+a = input('1st letter:')
+b = input('2nd letter:')
+c = input('3rd letter:')
+
+if a>b and b>c:
+    print('The letter in the middle is', b)
+elif a>c and c>b:
+    print('The letter in the middle is', c)
+elif b>a and a>c:
+    print('The letter in the middle is', a)
+elif a<b and a<c and b<c:
+    print('The letter in the middle is', b)
+elif b<a and b<c and a<c:
+    print('The letter in the middle is', a)
+elif a<b and a< c and b>c:
+    print('The letter in the middle is', c)
