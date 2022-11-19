@@ -1,0 +1,11 @@
+# Please write a program which asks the user for an integer number. If the number is divisible by three, the program should print out Fizz.
+If the number is divisible by five, the program should print out Buzz. 
+If the number is divisible by both three and five, the program should print out FizzBuzz.
+
+n = int(input('Number:'))
+if n%3 ==0 and n%5 !=0:
+    print('Fizz')
+elif n%5 ==0 and n%3 !=0:
+    print('Buzz')
+elif n%3==0 and n%5==0:
+    print('FizzBuzz')
