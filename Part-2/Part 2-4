@@ -1,0 +1,9 @@
+# Please write a program which asks the user for their age. 
+The program should then print out a message based on whether the user is of age or not, using 18 as the age of maturity.
+
+
+a = input('How old are you?')
+if int(a) >= 18:
+    print('You are of age!')
+else:
+    print('You are not of age!')
