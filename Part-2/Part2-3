@@ -1,0 +1,12 @@
+# Please write a program which asks the user for a floating point number and then prints out the integer part and the decimal part separately. 
+Use the Python int function.
+
+You can assume the number given by the user is always greater than zero.
+
+
+
+n = float(input('Please type in a number:'))
+i = int(n)
+d = n - float(i)
+print('Integer part:', i)
+print('Decimal part:', d)
