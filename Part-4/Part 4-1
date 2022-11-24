@@ -1,0 +1,12 @@
+# Please write a program which asks the user which editor they are using. The program should keep on asking until the user types in Visual Studio Code.
+
+while True:
+    ed = input('Editor ')
+    el = ed.lower()
+    if el == 'visual studio code':
+        print('an excellent choice!')
+        break
+    elif el == 'word' or ed == 'notepad':
+        print('awful')
+    else:
+        print('not good')
