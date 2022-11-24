@@ -1,0 +1,16 @@
+# Please write a function named most_common_character, which takes a string argument. The function returns the character which has the most occurrences within the string.
+
+If there are many characters with equally many occurrences, the one which appears first in the string should be returned.
+
+def most_common_character(my_string: str):
+    most_common = my_string[0]
+    for character in my_string:
+        if my_string.count(character) > my_string.count(most_common):
+            most_common = character
+ 
+    return most_common
+    
+
+if __name__ == "__main__":
+    second_string = "exemplaryelementary"
+    print(most_common_character(second_string))
