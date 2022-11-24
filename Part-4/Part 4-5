@@ -1,0 +1,19 @@
+# Please write a function named square, which prints out a square of characters, and takes two arguments. 
+The first parameter specifies the length of the side of the square. The second parameter specifies the character used to draw the square.
+
+def line(size,character):
+    if len(character)>1:
+        character = character[0]
+    elif character == "":
+        character= "*"
+
+    print(character*size)
+def square(size, character):
+    i = 0
+    while i<size:
+        line(size, character)
+        i = i+1
+
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    square(5, "x")
