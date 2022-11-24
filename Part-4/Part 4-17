@@ -1,0 +1,15 @@
+# 1
+
+Please write a function named length which takes a list as its argument and returns the length of the list
+
+
+def length(my_list):
+    result = len(my_list)
+    return result
+    
+    
+
+if __name__ == "__main__":
+    my_list = [3, 6, -4]
+    result = length(my_list)
+    print(result)
