@@ -1,0 +1,18 @@
+# 
+Please write a function named mean, which takes a list of integers as an argument. The function returns the arithmetic mean of the values 
+
+def mean(my_list):
+    k = len(my_list)
+    i = 0
+    j = 0
+    while i<k:
+        j = j+my_list[i]
+        i=i+1
+    result = float(j/k)
+    return result
+
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    my_list = [3, 6, -4]
+    result = mean(my_list)
+    print(result)
