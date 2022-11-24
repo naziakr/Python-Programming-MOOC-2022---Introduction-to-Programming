@@ -1,0 +1,12 @@
+# Please write a function named greatest_number, which takes three arguments. The function returns the greatest in value of the three.
+
+def greatest_number(a,b,c):
+    l = list()
+    l.append(a)
+    l.append(b)
+    l.append(c)
+    return max(l)
+# You can test your function by calling it within the following block
+if __name__ == "__main__":
+    greatest = greatest_number(9, 1, 3)
+    print(greatest)
