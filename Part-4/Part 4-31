@@ -1,0 +1,25 @@
+# Please write a function named all_the_longest, which takes a list of strings as its argument. 
+The function should return a new list containing the longest string in the original list. 
+If more than one are equally long, the function should return all of the longest strings.
+
+def all_the_longest(my_list):
+    result = list()
+    s = list()
+    for i in my_list:
+        s.append(len(i))
+    m = max(s)
+    for j in my_list:
+        if len(j) == m:
+            result.append(j)
+
+        
+    return result
+
+
+
+
+if __name__ == "__main__":
+    my_list =  ['Alan', 'Grace', 'Frances', 'Kim', 'Susan']
+
+    result = all_the_longest(my_list)
+    print(result)
