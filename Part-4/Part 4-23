@@ -1,0 +1,22 @@
+# Please write a function named anagrams, which takes two strings as arguments. 
+The function returns True if the strings are anagrams of each other. Two words are anagrams if they contain exactly the same characters.
+
+def anagrams(d,e):
+    
+    
+        i = sorted(d)
+        j = sorted(e)
+        
+        if i == j:
+            
+            return True
+        else:
+            return False
+            
+        
+
+
+if __name__ == "__main__":
+    
+    anagrams("house", "mouse")
+    
