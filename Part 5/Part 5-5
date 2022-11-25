@@ -1,0 +1,31 @@
+# Please write a function named column_correct(sudoku: list, column_no: int), which takes a two-dimensional array representing a sudoku grid, 
+and an integer referring to a single column, as its arguments. Columns are indexed from 0.
+
+The function should return True or False, depending on whether the column is filled in correctly, that is, whether it contains each of the numbers 1 to 9 at most once.
+
+def column_correct(sudoku, column_no):
+    l = list()
+    for i in sudoku:
+        l.append(i[column_no])
+    m = list()
+    for j in l:
+        if j != 0:
+            m.append(j)
+    if len(m) == len(set(m)):
+        return(True)
+    else: return(False)
+
+if __name__ == "__main__":
+    sudoku = [
+      [ 9, 0, 0, 0, 8, 0, 3, 0, 0 ],   # rivi 0
+      [ 2, 2, 0, 0, 5, 0, 7, 0, 0 ],   # rivi 1
+      [ 0, 2, 0, 3, 0, 0, 4, 0, 4 ],   # rivi 2
+      [ 2, 9, 4, 0, 0, 0, 0, 0, 0 ],   # rivi 3
+      [ 0, 0, 0, 7, 3, 0, 5, 6, 0 ],   # rivi 4
+      [ 7, 0, 5, 0, 6, 0, 4, 0, 0 ],   # rivi 5
+      [ 0, 0, 7, 8, 0, 3, 9, 6, 6 ],   # rivi 6
+      [ 3, 0, 1, 0, 0, 0, 0, 0, 3 ],   # rivi 7
+      [ 3, 0, 0, 0, 2, 0, 2, 0, 1 ],   # rivi 8
+    ]
+    
+    print(row_correct(sudoku, 2))
