@@ -1,0 +1,19 @@
+# Please write a function named longest(strings: list), which takes a list of strings as its argument.
+The function finds and returns the longest string in the list. You may assume there is always a single longest string in the list.
+
+def longest(strings):
+    l = 0
+    m = ""
+    for i in strings:
+        if len(i)>l:
+            l = len(i)
+            m = i
+
+    return m
+
+
+
+
+if __name__ == "__main__":
+    strings = ["hi", "hiya", "hello", "howdydoody", "hi there"]
+    print(longest(strings))
