@@ -156,7 +156,7 @@ More strings and lists
 4. Programming exercise: No shouting allowed
 5. Programming exercise: Neighbours in a list
 6. Programming exercise: Grade statistics
-7. Quiz: Feedback, part 4
+
 Part 5
 More lists
 1. Programming exercise: The longest string
