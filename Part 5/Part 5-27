@@ -1,0 +1,44 @@
+# This final exercise in this part is a relatively demanding problem solving task. It can be solved in many different ways. Even though this current section in the material covers tuples, tuples are not necessarily the best way to go about solving this.
+
+Please write a program which prints out a square of letters as specified in the examples below. You may assume there will be at most 26 layers.
+
+Sample output
+Layers: 3
+
+CCCCC
+CBBBC
+CBABC
+CBBBC
+CCCCC
+Sample output
+Layers: 4
+
+DDDDDDD
+DCCCCCD
+DCBBBCD
+DCBABCD
+DCBBBCD
+DCCCCCD
+DDDDDDD
+
+
+n = int(input("Layers: "))
+ 
+alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ 
+left = ""    # section, that goes downwards
+right = ""    # section, that goes upwards
+k = n-1       # the location of next character in alphabets
+m = 2*n-1     # the number of characters in between
+while k >= 1:
+    left = left+alphabets[k]
+    right = alphabets[k]+right
+    m -= 2
+    print(left+alphabets[k]*m+right)
+    k -= 1
+while k <= n-1:
+    print(left+alphabets[k]*m+right)
+    left = left[:-1]
+    right = right[1:]
+    m += 2
+    k += 1
