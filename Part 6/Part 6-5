@@ -1,0 +1,114 @@
+# Now also the exam points awarded to each student are contained in a CSV file. The contents of the file follow this format:
+
+id;e1;e2;e3
+12345678;4;1;4
+12345687;3;5;3
+12345699;10;2;2
+In the above example the student whose student number is 12345678 was awarded 4+1+4 points in the exam, which equals a total of 9 points.
+
+The program should again ask the user for the names of the files. Then the program should process the files and print out a grade for each student.
+
+Sample output
+Student information: students1.csv
+Exercises completed: exercises1.csv
+Exam points: exam_points1.csv
+pekka peloton 0
+jaana javanainen 1
+liisa virtanen 3
+
+Each completed exercise is counted towards exercise points, so that completing at least 10 % of the total exercices awards 1 point, 
+completing at least 20 % awards 2 points, etc. Completing all 40 exercises awards 10 points. The number of points awarded is always an integer number.
+
+The final grade for the course is determined based on the sum of exam and exercise points according to the following table:
+
+exam points + exercise points	grade
+0-14	0 (fail)
+15-17	1
+18-20	2
+21-23	3
+24-27	4
+28-	5
+NB: this exercise doesn't ask you to write any functions, so you should not place any code within an if __name__ == "__main__" block.
+
+Programming exercise:
+Course grading, part 3
+Points:
+1
+
+/
+
+1
+
+This exercise will continue from the previous one. Now we shall print out some statistics based on the CSV files.
+
+Sample output
+Student information: students1.csv
+Exercises completed: exercises1.csv
+Exam points: exam_points1.csv
+
+name                          exec_nbr  exec_pts. exm_pts.  tot_pts.  grade
+pekka peloton                 21        5         9         14        0
+jaana javanainen              27        6         11        17        1
+liisa virtanen                35        8         14        22        3
+Each row contains the information for a single student. The number of exercises completed, the number of exercise points awarded, 
+the number of exam points awarded, the total number of points awarded, and the grade are all displayed in tidy columns. 
+The width of the column for the name should be 30 characters, while the other columns should be 10 characters wide.
+
+
+
+file1 = input("Student information:")
+file2 = input("Exercises completed:")
+file3 = input("Exam points:")
+names = {}
+with open(file1) as new_file:
+    for line in new_file:
+        line = line.replace("\n","")
+        element = line.split(";")
+        if element[0] == "id":
+            continue
+        names[element[0]] = element[1] + " " + element[2]
+   
+
+exercise = {}
+with open(file2) as file:
+    for line in file: 
+        line = line.replace("\n","")
+        element = line.split(";")
+        if element[0] == "id":
+            continue
+        exercise[element[0]] = int(element[1]) + int(element[2]) + int(element[3]) +int(element[4]) +int(element[5]) +int(element[6]) +int(element[7])
+    
+examp = {}
+with open(file3) as file:
+    for line in file: 
+        line = line.replace("\n","")
+        element = line.split(";")
+        if element[0] == "id":
+            continue
+        examp[element[0]] = int(element[1]) + int(element[2]) + int(element[3])
+
+def points_to_grade(points):
+    grade = -1
+    if points <= 14:
+        return 0
+    elif points <= 17:
+        return 1
+    elif points <= 20:
+        return 2
+    elif points <= 23:
+        return 3
+    elif points <= 27:
+        return 4
+    else:
+        return 5
+
+for id, name in names.items():
+    if id in exercise:
+        total = int(((exercise[id]/40)*100)//10)
+    if id in examp:
+        point = int(examp[id])
+    grades = points_to_grade(total+point)
+    print(f"{name:} {grades}")
+        
+
+   
