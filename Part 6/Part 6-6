@@ -109,6 +109,8 @@ for id, name in names.items():
         point = int(examp[id])
     grades = points_to_grade(total+point)
     print(f"{name:} {grades}")
+    
+    
         
 
    
