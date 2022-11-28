@@ -1,0 +1,24 @@
+# The file fruits.csv contains names of fruits, and their prices, in the format specified in this example:
+
+banana;6.50
+apple;4.95
+orange;8.0
+...etc...
+Please write a function named read_fruits, which reads the file and returns a dictionary based on the contents. 
+In the dictionary, the name of the fruit should be the key, and the value should be its price. Prices should be of type float.
+
+def read_fruits ():
+    with open("fruits.csv") as new_file:
+        count = dict()
+        for lines in new_file:
+            line = lines.replace("\n","")
+            parts = line.split(";")
+            count[parts[0]] = float(parts[1])
+    return(count)
+
+
+
+
+if __name__ == "__main__":
+      
+    read_fruits()
