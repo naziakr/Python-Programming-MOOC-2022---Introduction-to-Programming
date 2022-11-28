@@ -1,0 +1,49 @@
+# This program works with two CSV files. One of them contains information about some students on a course:
+
+id;first;last
+12345678;peter;pythons
+12345687;jean;javanese
+12345699;alice;adder
+The other contains the number of exercises each student has completed each week:
+
+id;e1;e2;e3;e4;e5;e6;e7
+12345678;4;1;1;4;5;2;4
+12345687;3;5;3;1;5;4;6
+12345699;10;2;2;7;10;2;2
+As you can see above, both CSV files also have a header row, which tells you what each column contains.
+
+Please write a program which asks the user for the names of these two files, reads the files, and then prints out the total number of exercises completed by each student. If the files have the contents in the examples above, the program should print out the following:
+
+Sample output
+Student information: students1.csv
+Exercises completed: exercises1.csv
+pekka peloton 21
+jaana javanainen 27
+liisa virtanen 35
+
+
+file1 = input("Student information:")
+file2 = input("Exercises completed:")
+names = {}
+with open(file1) as new_file:
+    for line in new_file:
+        line = line.replace("\n","")
+        element = line.split(";")
+        if element[0] == "id":
+            continue
+        names[element[0]] = element[1] + " " + element[2]
+
+exercise = {}
+with open(file2) as file:
+    for line in file: 
+        line = line.replace("\n","")
+        element = line.split(";")
+        if element[0] == "id":
+            continue
+        exercise[element[0]] = int(element[1]) + int(element[2]) + int(element[3]) +int(element[4]) +int(element[5]) +int(element[6]) +int(element[7])
+    
+
+for id, name in names.items():
+    if id in exercise:
+        total = exercise[id]
+        print(f"{name:} {total}")
