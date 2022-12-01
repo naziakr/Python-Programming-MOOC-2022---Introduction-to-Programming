@@ -1,0 +1,17 @@
+# Please familiarize yourself with the Python module fractions. Use it to write a function named fractionate(amount: int), which takes the number of parts as its argument. 
+The function should divide the number 1 into as many equal sized fractions as is specified by the argument, and return these in a list.
+
+from fractions import Fraction
+
+def fractionate(amount: int):
+    fractions = []
+    for i in range(amount):
+        fractions.append(Fraction(1, amount))
+    return fractions
+
+if __name__ == "__main__":
+    for p in fractionate(3):
+        print(p)
+
+    print()
+    print(fractionate(5)
